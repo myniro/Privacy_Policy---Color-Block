@@ -58,6 +58,35 @@
       color: var(--text-secondary);
     }
 
+    .privacy-url-box {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: rgba(11, 19, 54, 0.65);
+      border: 1px solid rgba(92, 225, 255, 0.35);
+      border-radius: 12px;
+      display: inline-block;
+      max-width: 100%;
+      word-break: break-all;
+    }
+
+    .privacy-url-label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 4px;
+    }
+
+    .privacy-url-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--link-color);
+      text-decoration: underline;
+      word-break: break-all;
+    }
+
     section {
       background: var(--card-bg);
       border: 1px solid var(--card-border);
@@ -118,6 +147,10 @@
     <header>
       <h1>Privacy Policy</h1>
       <p>App Name: <strong>Color Block Puzzle</strong></p>
+      <div class="privacy-url-box">
+        <span class="privacy-url-label">Online Privacy URL</span>
+        <a class="privacy-url-link" href="https://myniro.github.io/Privacy_Policy---Color-Block/" target="_blank" rel="noopener noreferrer">https://myniro.github.io/Privacy_Policy---Color-Block/</a>
+      </div>
     </header>
 
     <section>
@@ -167,11 +200,24 @@
         <li><strong>Internet &amp; Network State:</strong> Used to load advertisements and game audio resources over secure HTTPS connections.</li>
         <li><strong>Advertising ID:</strong> Used by Google Mobile Ads SDK for displaying advertisements and preventing fraud.</li>
         <li><strong>Vibration:</strong> Used for optional haptic feedback during gameplay (can be disabled anytime in the in-game Settings menu).</li>
+        <li><strong>Notifications (POST_NOTIFICATIONS):</strong> Used on Android 13+ (API 33+) to send optional inactivity reminders, streak alerts, and daily bonus notifications if you have been away from the game. Can be enabled or disabled anytime in the in-game Settings menu ("Daily Reminders").</li>
       </ul>
     </section>
 
     <section>
-      <h2>5. Data Retention and Deletion</h2>
+      <h2>5. Notifications &amp; Daily Reminders</h2>
+      <p>
+        Color Block Puzzle offers optional local notifications to enhance your puzzle experience:
+      </p>
+      <ul>
+        <li><strong>Purpose of Notifications:</strong> If you have not opened or played the game for an extended period (such as 24 hours of inactivity), the App sends a friendly reminder highlighting your best score, streak challenges, or available star bonuses.</li>
+        <li><strong>Offline &amp; Local Scheduling:</strong> All reminder notifications are generated and scheduled strictly on your device using Android system alarms. No personal data, tracking identifiers, or usage logs are transmitted to any external servers for notification delivery.</li>
+        <li><strong>Full User Control:</strong> When opening the App on Android 13+, you are asked for notification permission. You can turn notifications on or off at any time using the <strong>Daily Reminders</strong> toggle in the in-game <strong>Settings</strong> menu, or in your device's Android settings (<strong>Settings &rarr; Apps &rarr; Color Block &rarr; Notifications</strong>).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Data Retention and Deletion</h2>
       <p>
         All game progress and preferences are stored locally on your device. You can permanently delete all saved game data at any time by:
       </p>
@@ -183,28 +229,28 @@
     </section>
 
     <section>
-      <h2>6. Children's Privacy</h2>
+      <h2>7. Children's Privacy</h2>
       <p>
         We do not knowingly collect any personal information from children. If you are a parent or guardian and believe that your child has provided personal information to us, please contact us at the email address below so that we can promptly delete such information.
       </p>
     </section>
 
     <section>
-      <h2>7. Data Security</h2>
+      <h2>8. Data Security</h2>
       <p>
         We value your trust and use industry-standard security practices, including encrypted HTTPS connections for network communication and private local storage for game progress.
       </p>
     </section>
 
     <section>
-      <h2>8. Changes to This Privacy Policy</h2>
+      <h2>9. Changes to This Privacy Policy</h2>
       <p>
         We may update our Privacy Policy from time to time. Any changes will be reflected on this page. You are advised to review this page periodically for any changes.
       </p>
     </section>
 
     <section>
-      <h2>9. Contact Us</h2>
+      <h2>10. Contact Us</h2>
       <p>
         If you have any questions, concerns, or requests regarding this Privacy Policy, please contact us at:
       </p>
